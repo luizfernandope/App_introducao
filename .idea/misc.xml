@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/App_introducao-main-oficial/App_introducao-main/app/src/main/res/layout/activity_iniciar.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main-oficial/App_introducao-main/app/src/main/res/layout/activity_login.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/drawable/btn_azul_cadastre_se.xml" value="0.22" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/drawable/btn_branco_entrar.xml" value="0.32" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/drawable/edit_text_logins.xml" value="0.32" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/drawable/gradient_azul_background.xml" value="0.32" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/drawable/ic_cadeado.xml" value="0.32" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/drawable/ic_calendario.xml" value="0.32" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/activity_cadastro_parte1.xml" value="0.25" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/activity_cadastro_parte2.xml" value="0.2644927536231884" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/activity_iniciar.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/activity_login.xml" value="0.2644927536231884" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/activity_main.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/activity_slides_introducao.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/aaaaaa/App_introducao-main/App_introducao-main/app/src/main/res/layout/fotos_introducao_adapter.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/introducaoMelhorada/app/src/main/res/layout/activity_main.xml" value="0.24818840579710144" />
+        <entry key="..\:/Escola2022/ANDROID_STUDIO/introducaoMelhorada/app/src/main/res/layout/fotos_introducao_adapter.xml" value="0.24818840579710144" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

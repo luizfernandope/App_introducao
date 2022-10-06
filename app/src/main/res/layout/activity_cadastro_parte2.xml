@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastro_parte2">
+
+    <TextView
+        android:id="@+id/titulo_cadastro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:text="Cadastrar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/subtitulo_cadastro2"/>
+    <TextView
+        android:id="@+id/subtitulo_cadastro2"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:text="Tornando seu sorriso mais saudavel sem nenhuma dificuldade"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro2"
+        app:layout_constraintBottom_toTopOf="@id/principalContainer_cadastro2"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/principalContainer_cadastro2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpfContainer_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="#ff0000"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/ic_pefil">
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/etMaskCPF_cadastro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:mask="___.___.___-__"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:hint="CPF"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telefoneContainer_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="#ff0000"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/ic_telefone"
+            android:layout_marginTop="20dp">
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/etMaskTelefone_cadastro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                app:mask="(__)_____-____"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:hint="telefone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailContainer_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="#ff0000"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/ic_mail"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMaskEmail_cadastro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dataNasciContainer_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="#ff0000"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/ic_calendario"
+            android:layout_marginTop="20dp">
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/etMaskDataNasci_cadastro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                app:mask="__/__/____"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:hint="data de nascimento"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/senhaContainer_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="#ff0000"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_cadeado"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSenha_cadastro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:hint="Senha"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBoxTermos_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="eu aceito os Termos e Condições do app e Políticas de privacidade"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadastrar_cadastro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn_azul_cadastre_se"
+            android:textColor="@color/white"
+            android:text="Cadastrar"
+            android:textSize="22dp"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

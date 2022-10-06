@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastroParte1">
+
+    <TextView
+        android:id="@+id/titulo_cadastro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:text="Coloque seu CPF"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/subtitulo_cadastro1"/>
+    <TextView
+        android:id="@+id/subtitulo_cadastro1"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:text="confirme seu CPF para checarmos se você já possui cadastro"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro1"
+        app:layout_constraintBottom_toTopOf="@id/principalContainer_cadastro1"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/principalContainer_cadastro1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpfContainer_cadastro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="#ff0000"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/ic_perfil_com_borda">
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/etMaskCPF_cadastro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:mask="___.___.___-__"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:hint="CPF"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAvancar_cadastro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn_azul_cadastre_se"
+            android:onClick="irParaCadastro2"
+            android:text="avançar"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/jaPossuiConta_cadastro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já possui conta? Faça login aqui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/principalContainer_cadastro1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        /*dependencias para imgageSlider(carrosel de fotos)*/
+        maven {url 'https://jitpack.io'}
+        maven {url 'https://jcenter.bintray.com'}
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        /*dependencias para imgageSlider(carrosel de fotos)*/
+        maven {url 'https://jitpack.io'}
+        maven {url 'https://jcenter.bintray.com'}
+    }
+}
+rootProject.name = "introducao"
+include ':app'
